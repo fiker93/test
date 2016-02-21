@@ -5,3 +5,5 @@ e una moto
 sono a jesi
 in italia
 e una vespa
+io ho solo il pc
+qualcosa
