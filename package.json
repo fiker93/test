@@ -1,0 +1,22 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "ciao sono riccardo focanti ho una barca e una moto sono a jesi in italia e una vespa io ho solo il pc qualcosa",
+  "main": "ToDoList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiker93/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fiker93/test/issues"
+  },
+  "homepage": "https://github.com/fiker93/test#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
