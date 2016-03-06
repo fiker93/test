@@ -1,3 +1,4 @@
+var _= require("underscore");
 /*var listaToDo = function(){
   var toReturn = [];
   var aggiungiToDo = function(testo){
@@ -31,6 +32,11 @@ var nuovoModuloToDo = function(){
     },
     eliminaToDo: function(i){
       toDos.splice(i,1);
+    },
+    listaToDoFatti: function(){
+      return _.filter(toDos, function(todo){
+        return todo.fatto;
+      });
     }
   };
   return toReturn;
@@ -42,3 +48,4 @@ primaListaTodo.aggiungiToDo("sale");
 primaListaTodo.mettiSpunta(1);
 primaListaTodo.eliminaToDo(2);
 console.log(primaListaTodo.listaToDo());
+console.log(primaListaTodo.listaToDoFatti());
