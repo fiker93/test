@@ -34,9 +34,12 @@ var nuovoModuloToDo = function(){
       toDos.splice(i,1);
     },
     listaToDoFatti: function(){
-      return _.filter(toDos, function(todo){
-        return todo.fatto;
+      return _.where(toDos,{
+        fatto: true
       });
+    /*  return _.filter(toDos, function(todo){
+        return todo.fatto;
+      });*/
     }
   };
   return toReturn;
