@@ -44,11 +44,12 @@ var nuovoModuloToDo = function(){
   };
   return toReturn;
 };
-var primaListaTodo = nuovoModuloToDo();
+/*var primaListaTodo = nuovoModuloToDo();
 primaListaTodo.aggiungiToDo("cipolle");
 primaListaTodo.aggiungiToDo("olio");
 primaListaTodo.aggiungiToDo("sale");
 primaListaTodo.mettiSpunta(1);
 primaListaTodo.eliminaToDo(2);
 console.log(primaListaTodo.listaToDo());
-console.log(primaListaTodo.listaToDoFatti());
+console.log(primaListaTodo.listaToDoFatti());*/
+module.exports = nuovoModuloToDo;

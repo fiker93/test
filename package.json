@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/fiker93/test#readme",
   "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
     "underscore": "^1.8.3"
   }
 }
