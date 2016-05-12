@@ -2,7 +2,26 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser.json());
-
+var logger = function(req, res, next){
+  console.log(new Date());
+  next();
+}
+var createLogger = function(prefix){
+  return function(req, res, next){
+    console.log((prefix || '') + new Date());
+    next();
+  }
+};
+app.use(createLogger('ciao: '));
+var checkCredentials = function(req, res, next){
+  if(req.headers.authorization !== '1234'){
+    res.status(401);
+    res.end();
+  }else {
+    next();
+  }
+}
+app.use(checkCredentials);
 var moduloToDo = require('./ToDoList');
 
 var todos = moduloToDo();
